@@ -3,6 +3,7 @@ fetch('https://api.thecatapi.com/v1/images/search?limit=10').then(function (resp
 	return response.json();
 })
 .then(function (data) {
+    appendData(data);
 	// This is the JSON from our response
 	console.log(data);
 
